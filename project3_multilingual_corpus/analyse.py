@@ -3,19 +3,20 @@ import re
 
 def preprocess(text):
     text = text.lower()
-    words = re.findall(r'\b\w+\b', text)
-    return words
+    return re.findall(r'\b\w+\b', text)
 
 def analyze(file):
     with open(file, "r", encoding="utf-8") as f:
-        text = f.read()
-    words = preprocess(text)
-    return Counter(words)
+        return Counter(preprocess(f.read()))
 
-korean = analyze("data/korean.txt")
-french = analyze("data/french.txt")
-english = analyze("data/english.txt")
+languages = ["korean", "french", "english"]
 
-print("Top Korean words:", korean.most_common(10))
-print("Top French words:", french.most_common(10))
-print("Top English words:", english.most_common(10))
+results = {}
+
+for lang in languages:
+    results[lang] = analyze(f"data/{lang}.txt")
+
+for lang, data in results.items():
+    print(f"\n=== {lang.upper()} TOP WORDS ===")
+    for word, freq in data.most_common(10):
+        print(word, freq)
