@@ -1,26 +1,51 @@
 # Project 3: Multilingual Corpus Comparison
 
 ## Objective
-This project explores lexical differences across Korean, French, and English using a small corpus-based approach.
+
+This project explores lexical variation across typologically different languages (Korean, French, English) using a corpus-based computational approach.
+
+---
 
 ## Research Question
-How do different languages structure lexical information in similar semantic contexts?
+
+Do typologically different languages exhibit distinct patterns of lexical distribution when analyzed in comparable semantic contexts?
+
+---
 
 ## Methodology
-- Collection of short comparable texts in three languages
-- Tokenization and preprocessing
-- Word frequency analysis
-- Cross-linguistic comparison of lexical patterns
 
-## Linguistic Focus
-- Contrastive linguistics
-- Lexical variation across languages
-- Corpus-based linguistic analysis
-- Typological differences in language structure
+- Construction of small comparable corpora in three languages  
+- Text preprocessing and tokenization using Python  
+- Word frequency analysis  
+- Cross-linguistic comparison of lexical patterns  
+
+---
+
+## Linguistic Perspective
+
+This project is grounded in:
+
+- Contrastive linguistics  
+- Linguistic typology  
+- Corpus-based quantitative analysis  
+- Lexical distribution studies  
+
+---
+
+## Theoretical Motivation
+
+The goal is to observe how different linguistic systems encode meaning through lexical choices, and how computational methods can help reveal underlying structural differences between languages.
+
+---
 
 ## Tools
+
 - Python (standard library)
 - Regex-based text processing
+- Counter-based frequency analysis
+
+---
 
 ## Expected Insight
-This project provides a preliminary observation of how different languages distribute lexical items differently even in similar communicative contexts.
+
+This preliminary analysis highlights how lexical patterns vary across languages, providing a first step toward computational approaches in comparative linguistics.
